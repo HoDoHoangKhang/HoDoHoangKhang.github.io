@@ -18,7 +18,7 @@ export function Nav({
       data-active-id={activeId}
       className={cn("flex items-center gap-4", className)}
     >
-      {items.map(({ title, href }) => {
+      {items.map(({ title, href }, index) => {
         const active =
           activeId === href ||
           (href === "/" // Home page
@@ -26,9 +26,19 @@ export function Nav({
             : activeId?.startsWith(href))
 
         return (
-          <NavItem key={href} href={href} active={active}>
-            {title}
-          </NavItem>
+          <React.Fragment key={href}>
+            {index > 0 && (
+              <span
+                aria-hidden
+                className="font-mono text-sm text-muted-foreground/60"
+              >
+                |
+              </span>
+            )}
+            <NavItem href={href} active={active}>
+              {title}
+            </NavItem>
+          </React.Fragment>
         )
       })}
     </nav>

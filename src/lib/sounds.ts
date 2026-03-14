@@ -1,4 +1,5 @@
+// TODO: update Hoang Khang — replace with your own audio assets or host URLs
 export const SOUNDS = {
-  click: "https://assets.chanhdai.com/audio/ui-sounds/click.mp3?v=1",
-  unlock: "https://assets.chanhdai.com/audio/ui-sounds/unlock.mp3?v=1",
+  click: "/sounds/click.mp3",
+  unlock: "/sounds/unlock.mp3",
 }

@@ -23,7 +23,7 @@ const CONFIG = {
   gutter: 5,
   renderedWidth: 64,
   renderedHeight: 64,
-  spriteSheet: "https://assets.chanhdai.com/images/sprites/duck.webp?v=2",
+  spriteSheet: "/images/sprites/duck.webp", // TODO: add sprite to public/images/sprites/
   animations: {
     walking: {
       row: 0,

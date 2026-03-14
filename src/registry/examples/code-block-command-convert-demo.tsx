@@ -7,7 +7,7 @@ export default function CodeBlockCommandConvertDemo() {
   return (
     <div className="w-full max-w-md">
       <CodeBlockCommand
-        {...convertNpmCommand("npx shadcn add @ncdai/code-block-command")}
+        {...convertNpmCommand("npx shadcn add @hoangkang/code-block-command")}
       />
     </div>
   )

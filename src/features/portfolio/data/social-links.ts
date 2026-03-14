@@ -1,46 +1,23 @@
 import type { SocialLink } from "../types/social-links"
 
+// Icon ảnh chuẩn thương hiệu (Facebook, GitHub, LinkedIn). Update href với link profile của bạn.
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    icon: "https://assets.chanhdai.com/images/link-icons/x.webp?v=2",
-    title: "X",
-    subtitle: "@iamncdai",
-    href: "https://x.com/iamncdai",
+    icon: "/images/link-icons/facebook.png",
+    title: "Facebook",
+    subtitle: "",
+    href: "https://www.facebook.com/hodohoangkhangl",
   },
   {
-    icon: "https://assets.chanhdai.com/images/link-icons/github.webp?v=2",
+    icon: "/images/link-icons/github.png",
     title: "GitHub",
-    subtitle: "ncdai",
-    href: "https://github.com/ncdai",
+    subtitle: "",
+    href: "https://github.com/HoDoHoangKhang",
   },
   {
-    icon: "https://assets.chanhdai.com/images/link-icons/linkedin.webp?v=2",
+    icon: "/images/link-icons/linkedin.png",
     title: "LinkedIn",
-    subtitle: "ncdai",
-    href: "https://linkedin.com/in/ncdai",
-  },
-  {
-    icon: "https://assets.chanhdai.com/images/link-icons/dailydotdev.webp?v=2",
-    title: "daily.dev",
-    subtitle: "@ncdai",
-    href: "https://app.daily.dev/ncdai",
-  },
-  {
-    icon: "https://assets.chanhdai.com/images/link-icons/discord.webp?v=2",
-    title: "Discord",
-    subtitle: "ncdai",
-    href: "https://discord.com/users/1186630645443739651",
-  },
-  // {
-  //   icon: "https://assets.chanhdai.com/images/link-icons/zalo.webp?v=2",
-  //   title: "Zalo",
-  //   subtitle: "Quaric",
-  //   href: "https://zalo.me/2353934240045322830",
-  // },
-  {
-    icon: "https://assets.chanhdai.com/images/link-icons/youtube.webp?v=2",
-    title: "YouTube",
-    subtitle: "@ncdai",
-    href: "https://www.youtube.com/@ncdai",
+    subtitle: "",
+    href: "https://www.linkedin.com/in/%C4%91%E1%BB%97-ho%C3%A0ng-khang-h%E1%BB%93-6951592a9/",
   },
 ]

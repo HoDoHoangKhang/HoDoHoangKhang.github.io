@@ -5,7 +5,7 @@ export const lib: Registry["items"] = [
     name: "utils",
     type: "registry:lib",
     title: "Utility Functions",
-    author: "ncdai <dai@chanhdai.com>",
+    author: "Hoàng Khang (HK)",
     dependencies: ["clsx", "tailwind-merge"],
     files: [
       {
@@ -18,7 +18,7 @@ export const lib: Registry["items"] = [
     name: "haptic",
     type: "registry:lib",
     title: "Haptic Feedback",
-    author: "ncdai <dai@chanhdai.com>",
+    author: "Hoàng Khang (HK)",
     description: "Trigger haptic feedback on mobile devices.",
     files: [
       {

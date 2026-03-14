@@ -15,7 +15,7 @@ import { MDX } from "@/components/mdx"
 import { Button } from "@/components/ui/button"
 import { Kbd } from "@/components/ui/kbd"
 import { Prose } from "@/components/ui/typography"
-import { SITE_INFO, X_USERNAME } from "@/config/site"
+import { SITE_INFO } from "@/config/site"
 import { PostKeyboardShortcuts } from "@/features/blog/components/post-keyboard-shortcuts"
 import { LLMCopyButtonWithViewOptions } from "@/features/blog/components/post-page-actions"
 import { PostShareMenu } from "@/features/blog/components/post-share-menu"
@@ -49,12 +49,8 @@ export async function generateMetadata({
     return notFound()
   }
 
-  const { title, description, image, createdAt, updatedAt } = doc.metadata
-
+  const { title, description } = doc.metadata
   const postUrl = getDocUrl(doc)
-  const ogImage =
-    image ||
-    `/og/simple?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}`
 
   return {
     title,
@@ -62,24 +58,7 @@ export async function generateMetadata({
     alternates: {
       canonical: postUrl,
     },
-    openGraph: {
-      url: postUrl,
-      type: "article",
-      publishedTime: new Date(createdAt).toISOString(),
-      modifiedTime: new Date(updatedAt).toISOString(),
-      images: {
-        url: ogImage,
-        width: 1200,
-        height: 630,
-        alt: title,
-      },
-    },
-    twitter: {
-      card: "summary_large_image",
-      site: X_USERNAME,
-      creator: X_USERNAME,
-      images: [ogImage],
-    },
+    // Không dùng Open Graph / Twitter Card khi chia sẻ bài viết lên mạng xã hội
   }
 }
 
@@ -243,6 +222,5 @@ export default async function Page({
 }
 
 function getDocUrl(doc: Doc) {
-  const isComponent = doc.metadata.category === "components"
-  return isComponent ? `/components/${doc.slug}` : `/blog/${doc.slug}`
+  return `/blog/${doc.slug}`
 }

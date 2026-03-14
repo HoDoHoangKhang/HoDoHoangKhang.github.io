@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 
 import {
@@ -7,6 +9,7 @@ import {
 } from "@/components/base/ui/tooltip"
 
 import { TECH_STACK } from "../data/tech-stack"
+import { getTechStackIconUrl } from "../data/tech-stack-icon-slugs"
 import { Panel, PanelContent, PanelHeader, PanelTitle } from "./panel"
 
 export function TechStack() {
@@ -33,7 +36,7 @@ export function TechStack() {
                         {tech.theme ? (
                           <>
                             <Image
-                              src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}-light.svg`}
+                              src={getTechStackIconUrl(tech.key, "light")}
                               alt={`${tech.title} light icon`}
                               width={32}
                               height={32}
@@ -41,7 +44,7 @@ export function TechStack() {
                               unoptimized
                             />
                             <Image
-                              src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}-dark.svg`}
+                              src={getTechStackIconUrl(tech.key, "dark")}
                               alt={`${tech.title} dark icon`}
                               width={32}
                               height={32}
@@ -51,7 +54,7 @@ export function TechStack() {
                           </>
                         ) : (
                           <Image
-                            src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}.svg`}
+                            src={getTechStackIconUrl(tech.key)}
                             alt={`${tech.title} icon`}
                             width={32}
                             height={32}

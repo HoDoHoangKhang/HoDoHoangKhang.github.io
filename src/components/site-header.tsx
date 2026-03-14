@@ -2,22 +2,14 @@ import dynamic from "next/dynamic"
 import Link from "next/link"
 
 import { DesktopNav } from "@/components/desktop-nav"
-import { NavItemGitHub } from "@/components/nav-item-github"
 import { MAIN_NAV } from "@/config/site"
-import { getAllDocs } from "@/features/doc/data/documents"
-import type { DocPreview } from "@/features/doc/types/document"
 import { cn } from "@/lib/utils"
 
 import { SiteHeaderMark } from "./site-header-mark"
 import { ThemeToggle } from "./theme-toggle"
-import { Separator } from "./ui/separator"
 
 const BrandContextMenu = dynamic(() =>
   import("@/components/brand-context-menu").then((mod) => mod.BrandContextMenu)
-)
-
-const CommandMenu = dynamic(() =>
-  import("@/components/command-menu").then((mod) => mod.CommandMenu)
 )
 
 const MobileNav = dynamic(() =>
@@ -29,15 +21,6 @@ export function SiteHeader({
 }: {
   width?: "default" | "wide"
 }) {
-  const posts = getAllDocs()
-
-  // Minimize data serialized to client component - only send necessary fields
-  const postPreviews: DocPreview[] = posts.map((post) => ({
-    slug: post.slug,
-    title: post.metadata.title,
-    category: post.metadata.category,
-  }))
-
   return (
     <header
       className={cn(
@@ -67,13 +50,7 @@ export function SiteHeader({
 
         <DesktopNav items={MAIN_NAV} />
 
-        <div className="flex items-center *:first:mr-2">
-          <CommandMenu posts={postPreviews} />
-          <NavItemGitHub />
-          <Separator
-            orientation="vertical"
-            className="mx-2 data-vertical:h-4 data-vertical:self-center"
-          />
+        <div className="flex items-center gap-2">
           <ThemeToggle />
           <MobileNav items={MAIN_NAV} />
         </div>

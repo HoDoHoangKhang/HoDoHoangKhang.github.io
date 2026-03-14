@@ -22,7 +22,7 @@ export function PronounceMyName({
   return (
     <button
       className={cn(
-        "relative text-muted-foreground transition-[color,scale] select-none hover:text-foreground active:scale-[0.9]",
+        "relative cursor-pointer text-muted-foreground transition-[color,scale] select-none hover:text-foreground active:scale-[0.9]",
         "after:absolute after:-inset-1",
         className
       )}

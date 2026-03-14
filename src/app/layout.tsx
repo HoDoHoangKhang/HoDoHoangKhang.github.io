@@ -8,7 +8,7 @@ import type { WebSite, WithContext } from "schema-dts"
 import { ConsentManagerClient } from "@/components/consent-manager-client"
 import { DuckFollower } from "@/components/duck-follower"
 import { Providers } from "@/components/providers"
-import { META_THEME_COLORS, SITE_INFO, X_USERNAME } from "@/config/site"
+import { META_THEME_COLORS, SITE_INFO } from "@/config/site"
 import { USER } from "@/features/portfolio/data/user"
 import { fontMono, fontPixelSquare, fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
@@ -47,53 +47,14 @@ export const metadata: Metadata = {
   },
   description: SITE_INFO.description,
   keywords: SITE_INFO.keywords,
-  authors: [
-    {
-      name: "ncdai",
-      url: SITE_INFO.url,
-    },
-  ],
-  creator: "ncdai",
-  openGraph: {
-    siteName: SITE_INFO.name,
-    url: "/",
-    type: "profile",
-    locale: "en_US",
-    firstName: USER.firstName,
-    lastName: USER.lastName,
-    username: USER.username,
-    gender: USER.gender,
-    images: [
-      {
-        url: SITE_INFO.ogImage,
-        width: 1200,
-        height: 630,
-        alt: SITE_INFO.name,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: X_USERNAME,
-    creator: X_USERNAME,
-    images: [SITE_INFO.ogImage],
-  },
+  authors: [{ name: SITE_INFO.name, url: SITE_INFO.url }],
+  creator: SITE_INFO.name,
+  // Không dùng Open Graph / Twitter Card khi chia sẻ lên mạng xã hội
   icons: {
     icon: [
-      {
-        url: "https://assets.chanhdai.com/images/favicon.ico",
-        sizes: "any",
-      },
-      {
-        url: "https://assets.chanhdai.com/images/favicon.svg",
-        type: "image/svg+xml",
-      },
+      { url: "/logo-k.png", type: "image/png", sizes: "any" },
     ],
-    apple: {
-      url: "https://assets.chanhdai.com/images/apple-touch-icon.png",
-      type: "image/png",
-      sizes: "180x180",
-    },
+    apple: { url: "/logo-k.png", type: "image/png", sizes: "180x180" },
   },
 }
 

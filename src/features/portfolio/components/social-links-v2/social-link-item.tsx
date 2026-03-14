@@ -1,5 +1,4 @@
 import { ArrowUpRightIcon } from "lucide-react"
-import Image from "next/image"
 
 import { UTM_PARAMS } from "@/config/site"
 import type { SocialLink } from "@/features/portfolio/types/social-links"
@@ -18,17 +17,17 @@ export function SocialLinkItem({ icon, title, href }: SocialLink) {
       target="_blank"
       rel="noopener"
     >
-      <div className="relative size-8 shrink-0">
-        <Image
-          className="rounded-lg select-none corner-squircle supports-corner-shape:rounded-[50%]"
+      <div className="relative size-8 shrink-0 overflow-hidden rounded-lg">
+        <img
+          className="size-8 rounded-lg object-contain"
           src={icon}
-          alt={title}
+          alt=""
           width={32}
           height={32}
-          quality={100}
-          unoptimized
+          loading="lazy"
+          decoding="async"
         />
-        <div className="pointer-events-none absolute inset-0 rounded-lg ring-1 ring-black/10 corner-squircle ring-inset dark:ring-white/15 supports-corner-shape:rounded-[50%]" />
+        <div className="pointer-events-none absolute inset-0 rounded-lg ring-1 ring-black/10 ring-inset dark:ring-white/15" />
       </div>
 
       <h3 className="flex-1 font-medium">{title}</h3>
