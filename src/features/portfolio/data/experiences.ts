@@ -5,7 +5,7 @@ export const EXPERIENCES: Experience[] = [
     id: "123-website",
     companyName: "123Website",
     companyLogo: "/images/companies/123website.png",
-    companyWebsite: "https://123website.co",
+    companyWebsite: "https://123website.com.vn/",
     positions: [
       {
         id: "1",
