@@ -34,7 +34,7 @@ export const USER: User = {
 - Open to collaboration and new opportunities.
 `,
   avatar: "/images/avatar.png",
-  ogImage: "/images/og-image.svg",
+  ogImage: "/images/og-image.png",
   namePronunciationUrl: "", // optional: URL to audio file for name pronunciation
   timeZone: "Asia/Ho_Chi_Minh",
   keywords: [

@@ -19,7 +19,17 @@ export const EXPERIENCES: Experience[] = [
 - Built **custom WordPress themes and plugins** in PHP to extend functionality per project requirements
 - Used **Vue.js** in **Headless WordPress** setup to build modern, interactive interfaces
 - Contributed to **UI/UX design** on selected projects`,
-        skills: ["WordPress", "PHP", "Vue.js", "WooCommerce", "Elementor", "UI/UX"],
+        skills: [
+          "WordPress",
+          "PHP",
+          "WooCommerce",
+          "Elementor",
+          "Vue.js",
+          "ACF",
+          "HTML",
+          "CSS",
+          "UI/UX",
+        ],
         isExpanded: true,
       },
       {
@@ -31,7 +41,7 @@ export const EXPERIENCES: Experience[] = [
         description: `- Design **UI** for client websites and landing pages
 - Create layouts and visual systems to improve **user experience**
 - Collaborate with development on implementation and consistency`,
-        skills: ["UI Design", "UX", "Figma", "Layout", "Visual Design"],
+        skills: ["Figma", "UI Design", "UX", "Layout", "Visual Design"],
         isExpanded: false,
       },
     ],
@@ -72,7 +82,7 @@ export const EXPERIENCES: Experience[] = [
     id: "american-study",
     companyName: "American Study",
     companyLogo: "/images/companies/american-study.png",
-    companyWebsite: "#",
+    companyWebsite: "https://americanstudy.edu.vn/",
     positions: [
       {
         id: "1",
@@ -86,7 +96,14 @@ export const EXPERIENCES: Experience[] = [
 - Contributed to **UI/UX design**: layout and structure to improve user experience
 - Developed and customized sites with **WordPress**, **WooCommerce**, and **Elementor**
 - Optimized **performance**, responsiveness, and UX across devices`,
-        skills: ["WordPress", "PHP", "Vue.js", "WooCommerce", "Elementor", "UI/UX"],
+        skills: [
+          "WordPress",
+          "PHP",
+          "Vue.js",
+          "WooCommerce",
+          "Elementor",
+          "UI/UX",
+        ],
         isExpanded: false,
       },
     ],
@@ -96,7 +113,7 @@ export const EXPERIENCES: Experience[] = [
     id: "tada-labs",
     companyName: "TADA Labs",
     companyLogo: "/images/companies/tadalabs.png",
-    companyWebsite: "#",
+    companyWebsite: "https://tadalabs.vn/",
     positions: [
       {
         id: "1",
@@ -110,7 +127,14 @@ export const EXPERIENCES: Experience[] = [
 - Contributed to **UI/UX design**: layout and structure to improve user experience
 - Developed and customized sites with **WordPress**, **WooCommerce**, and **Elementor**
 - Optimized **performance**, responsiveness, and UX across devices`,
-        skills: ["WordPress", "PHP", "Vue.js", "WooCommerce", "Elementor", "UI/UX"],
+        skills: [
+          "WordPress",
+          "PHP",
+          "Vue.js",
+          "WooCommerce",
+          "Elementor",
+          "UI/UX",
+        ],
         isExpanded: false,
       },
     ],

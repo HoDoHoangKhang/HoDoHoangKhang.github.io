@@ -10,7 +10,7 @@ export const EDUCATION: Education[] = [
       {
         id: "1",
         degree: "Engineer's Degree in Software Engineering",
-        period: { start: "2021" },
+        period: { start: "2021", end: "2026" },
         grade: "Current GPA: 3.23/4.0",
         description: `- Focus on **software development**, **web technologies**, and **database** systems
 - Coursework in **data structures**, **algorithms**, **object-oriented programming**, and **web development**`,

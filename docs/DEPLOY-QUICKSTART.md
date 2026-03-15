@@ -1,12 +1,51 @@
 # Deploy portfolio lên VPS mới – từ đầu
 
-Hướng dẫn từng bước cho VPS **mới mua**, chưa cài gì. Làm đúng thứ tự.
+Hướng dẫn từng bước cho VPS **mới mua**, chưa cài gì.
 
-**Chuẩn bị:** Bạn cần có:
-- **IP VPS** (ví dụ `103.xx.xx.xx`)
-- **User SSH** (thường là `root` hoặc `ubuntu`)
-- **Domain** (ví dụ `hoangkhang.tech`) — hoặc tạm dùng IP để test
-- Repo đã **đẩy lên GitHub** (để clone), hoặc dùng rsync từ máy tính
+**Chuẩn bị:** IP VPS, user SSH (thường `root`), domain (ví dụ `hoangkhang.tech`), repo đã push lên GitHub.
+
+---
+
+## Cách nhanh (dùng script – chỉ vài lệnh)
+
+Sau khi **SSH vào VPS**, làm lần lượt:
+
+### Bước 1: Cài môi trường (chạy 1 lần khi VPS mới)
+
+Copy **cả khối** sau, dán vào terminal VPS rồi Enter:
+
+```bash
+curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
+apt-get install -y nodejs git nginx && \
+npm install -g pm2 && \
+echo "Xong: Node $(node -v), PM2 $(pm2 -v)"
+```
+
+### Bước 2: Clone repo
+
+(Dùng Personal Access Token khi hỏi password, hoặc dùng SSH key.)
+
+```bash
+cd /root && git clone https://github.com/HoDoHoangKhang/portfolio.git && cd portfolio
+```
+
+### Bước 3: Deploy bằng 1 lệnh
+
+Thay `hoangkhang.tech` bằng domain của bạn:
+
+```bash
+bash scripts/deploy-vps.sh hoangkhang.tech
+```
+
+Script sẽ tự: `npm install` → tạo `.env` → `npm run build` → PM2 → Nginx → SSL (Let's Encrypt). Chờ xong rồi mở `https://domain-cua-ban`.
+
+**Lưu ý:** DNS domain phải đã trỏ A record về IP VPS trước khi chạy (hoặc chạy script trước, bật SSL sau khi DNS đã trỏ).
+
+---
+
+## Cách chi tiết (từng bước tay)
+
+Nếu không dùng script, làm theo các phần dưới.
 
 ---
 
