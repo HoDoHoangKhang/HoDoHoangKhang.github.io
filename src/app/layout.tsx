@@ -106,7 +106,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        {/* Google tag (gtag.js) – ngay sau <head>, chỉ 1 thẻ */}
+        {/* Google tag (gtag.js) */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
@@ -115,6 +115,7 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
