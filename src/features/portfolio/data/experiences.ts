@@ -13,7 +13,10 @@ export const EXPERIENCES: Experience[] = [
         employmentPeriod: { start: "04.2026" },
         employmentType: "Full-time",
         icon: "code",
-        description: `- Developed **corporate branding websites** and landing pages with CMS for various businesses, ensuring high performance, responsiveness, and near pixel-perfect implementation
+        description: `- Working in a **Japanese-oriented digital company environment**, with strong attention to quality, detail, and disciplined execution
+- Contributed to branding and web solutions for businesses with a focus on **professional presentation**, trust, and long-term brand value
+- Collaborated in a workflow that emphasizes **clear communication**, responsibility, and consistent delivery standards
+- Developed **corporate branding websites** and landing pages with CMS for various businesses, ensuring high performance, responsiveness, and near pixel-perfect implementation
 - Built **custom WordPress themes and plugins** from scratch to meet specific client requirements
 - Optimized web applications for **cross-browser compatibility** and accessibility, following **Google PSI** and **W3C** best practices
 - Engineered scalable **React.js** applications using **Next.js**, building modular reusable components and applying **SSR/SSG** strategies to improve performance, load speed, and SEO
