@@ -8,7 +8,7 @@
     "motion"
   ],
   "registryDependencies": [
-    "https://hoangkhang.tech/r/shimmering-text.json"
+    "https://hodohoangkhang.github.io/r/shimmering-text.json"
   ],
   "files": [
     {
@@ -17,6 +17,6 @@
       "type": "registry:component"
     }
   ],
-  "docs": "https://hoangkhang.tech/components/slide-to-unlock",
+  "docs": "https://hodohoangkhang.github.io/components/slide-to-unlock",
   "type": "registry:component"
 }

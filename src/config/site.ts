@@ -1,11 +1,12 @@
 import { USER } from "@/features/portfolio/data/user"
 import type { NavItem } from "@/types/nav"
 
-const DEFAULT_SITE_URL = "https://hoangkhang.tech" // TODO: update Hoang Khang domain when deployed
+const DEFAULT_SITE_URL = "https://hodohoangkhang.github.io"
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.APP_URL || process.env.NEXT_PUBLIC_APP_URL || DEFAULT_SITE_URL,
+  url:
+    process.env.APP_URL || process.env.NEXT_PUBLIC_APP_URL || DEFAULT_SITE_URL,
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,
@@ -35,5 +36,6 @@ export const SOURCE_CODE_GITHUB_URL = ""
 export const SPONSORSHIP_URL = ""
 
 export const UTM_PARAMS = {
-  utm_source: SITE_INFO.url.replace(/^https?:\/\//, "").replace(/\/$/, "") || "portfolio",
+  utm_source:
+    SITE_INFO.url.replace(/^https?:\/\//, "").replace(/\/$/, "") || "portfolio",
 }

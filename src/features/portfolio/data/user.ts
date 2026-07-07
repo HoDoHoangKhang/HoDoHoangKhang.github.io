@@ -17,7 +17,8 @@ export const USER: User = {
   address: "Ho Chi Minh City, Viet Nam",
   phoneNumber: "Kzg0MDMzODg3MzQ2MQ==", // E.164 format, base64 encoded (+840338873461)
   email: "aG9kb2hvYW5na2hhbmdAZ21haWwuY29t", // base64 encoded (hodohoangkhang@gmail.com)
-  website: process.env.NEXT_PUBLIC_APP_URL || "https://hoangkhang.tech",
+  website:
+    process.env.NEXT_PUBLIC_APP_URL || "https://hodohoangkhang.github.io",
   jobTitle: "Web Developer",
   jobs: [
     {

@@ -14,7 +14,7 @@
   "registryDependencies": [
     "collapsible",
     "separator",
-    "https://hoangkhang.tech/r/typography.json"
+    "https://hodohoangkhang.github.io/r/typography.json"
   ],
   "files": [
     {
@@ -23,6 +23,6 @@
       "type": "registry:component"
     }
   ],
-  "docs": "https://hoangkhang.tech/components/work-experience",
+  "docs": "https://hodohoangkhang.github.io/components/work-experience",
   "type": "registry:component"
 }

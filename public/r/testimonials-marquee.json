@@ -6,9 +6,9 @@
   "description": "Scrolling marquee to showcase user testimonials.",
   "registryDependencies": [
     "@kibo-ui/marquee",
-    "https://hoangkhang.tech/r/testimonial.json"
+    "https://hodohoangkhang.github.io/r/testimonial.json"
   ],
   "files": [],
-  "docs": "https://hoangkhang.tech/components/testimonials-marquee",
+  "docs": "https://hodohoangkhang.github.io/components/testimonials-marquee",
   "type": "registry:component"
 }

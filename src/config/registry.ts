@@ -6,5 +6,5 @@ export const registryConfig = {
   namespace: process.env.NEXT_PUBLIC_REGISTRY_NAMESPACE || "@hoangkang",
   namespaceUrl:
     process.env.NEXT_PUBLIC_REGISTRY_NAMESPACE_URL ||
-    "https://hoangkhang.tech/r/{name}.json",
+    "https://hodohoangkhang.github.io/r/{name}.json",
 }

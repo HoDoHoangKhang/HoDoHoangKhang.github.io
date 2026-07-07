@@ -17,7 +17,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://hoangkhang.tech/components/theme-switcher",
+    docs: "https://hodohoangkhang.github.io/components/theme-switcher",
   },
   {
     name: "text-flip",
@@ -33,7 +33,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://hoangkhang.tech/components/text-flip",
+    docs: "https://hodohoangkhang.github.io/components/text-flip",
   },
   {
     name: "apple-hello-effect",
@@ -48,7 +48,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://hoangkhang.tech/components/apple-hello-effect",
+    docs: "https://hodohoangkhang.github.io/components/apple-hello-effect",
   },
   {
     name: "wheel-picker",
@@ -64,7 +64,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://hoangkhang.tech/components/react-wheel-picker",
+    docs: "https://hodohoangkhang.github.io/components/react-wheel-picker",
   },
   {
     name: "typography",
@@ -107,7 +107,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://hoangkhang.tech/components/work-experience",
+    docs: "https://hodohoangkhang.github.io/components/work-experience",
   },
   {
     name: "shimmering-text",
@@ -138,7 +138,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://hoangkhang.tech/components/slide-to-unlock",
+    docs: "https://hodohoangkhang.github.io/components/slide-to-unlock",
   },
   {
     name: "testimonials-marquee",
@@ -150,7 +150,7 @@ export const components: Registry["items"] = [
       "@kibo-ui/marquee",
       getRegistryItemUrl("testimonial"),
     ],
-    docs: "https://hoangkhang.tech/components/testimonials-marquee",
+    docs: "https://hodohoangkhang.github.io/components/testimonials-marquee",
   },
   {
     name: "testimonial",

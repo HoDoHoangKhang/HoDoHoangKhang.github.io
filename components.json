@@ -22,7 +22,7 @@
   "menuColor": "default",
   "menuAccent": "subtle",
   "registries": {
-    "@hoangkang": "https://hoangkhang.tech/r/{name}.json",
+    "@hoangkang": "https://hodohoangkhang.github.io/r/{name}.json",
     "@kibo-ui": "https://kibo-ui.com/r/{name}.json",
     "@react-bits": "https://reactbits.dev/r/{name}.json"
   }

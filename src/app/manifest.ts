@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next"
 
 import { SITE_INFO } from "@/config/site"
 
+export const dynamic = "force-static"
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     short_name: SITE_INFO.name,
@@ -10,19 +12,54 @@ export default function manifest(): MetadataRoute.Manifest {
     // TODO: update Hoang Khang — add your icons to public/
     icons: [
       { src: "/icon.svg", type: "image/svg+xml", sizes: "any", purpose: "any" },
-      { src: "/icon-192.png", type: "image/png", sizes: "192x192", purpose: "any" },
-      { src: "/icon-512.png", type: "image/png", sizes: "512x512", purpose: "any" },
-      { src: "/maskable-icon.png", type: "image/png", sizes: "512x512", purpose: "maskable" },
+      {
+        src: "/icon-192.png",
+        type: "image/png",
+        sizes: "192x192",
+        purpose: "any",
+      },
+      {
+        src: "/icon-512.png",
+        type: "image/png",
+        sizes: "512x512",
+        purpose: "any",
+      },
+      {
+        src: "/maskable-icon.png",
+        type: "image/png",
+        sizes: "512x512",
+        purpose: "maskable",
+      },
     ],
     id: "/?utm_source=pwa",
     start_url: "/?utm_source=pwa",
     display: "standalone",
     scope: "/",
     screenshots: [
-      { src: "/screenshots/mobile-dark.webp", type: "image/webp", sizes: "440x956", form_factor: "narrow" },
-      { src: "/screenshots/mobile-light.webp", type: "image/webp", sizes: "440x956", form_factor: "narrow" },
-      { src: "/screenshots/desktop-dark.webp", type: "image/webp", sizes: "1920x1080", form_factor: "wide" },
-      { src: "/screenshots/desktop-light.webp", type: "image/webp", sizes: "1920x1080", form_factor: "wide" },
+      {
+        src: "/screenshots/mobile-dark.webp",
+        type: "image/webp",
+        sizes: "440x956",
+        form_factor: "narrow",
+      },
+      {
+        src: "/screenshots/mobile-light.webp",
+        type: "image/webp",
+        sizes: "440x956",
+        form_factor: "narrow",
+      },
+      {
+        src: "/screenshots/desktop-dark.webp",
+        type: "image/webp",
+        sizes: "1920x1080",
+        form_factor: "wide",
+      },
+      {
+        src: "/screenshots/desktop-light.webp",
+        type: "image/webp",
+        sizes: "1920x1080",
+        form_factor: "wide",
+      },
     ],
   }
 }
