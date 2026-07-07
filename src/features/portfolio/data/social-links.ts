@@ -18,6 +18,6 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: "/images/link-icons/linkedin.png",
     title: "LinkedIn",
     subtitle: "",
-    href: "https://www.linkedin.com/in/%C4%91%E1%BB%97-ho%C3%A0ng-khang-h%E1%BB%93-6951592a9/",
+    href: "https://www.linkedin.com/in/khang-ho-6951592a9/",
   },
 ]

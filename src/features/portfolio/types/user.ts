@@ -25,7 +25,6 @@ export type User = {
   jobs: {
     title: string
     company: string
-    website: string
     experienceId?: string
   }[]
   /** Rich about section; supports Markdown */

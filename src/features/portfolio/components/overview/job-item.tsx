@@ -1,8 +1,5 @@
 import { BriefcaseBusinessIcon, CodeXmlIcon, LightbulbIcon } from "lucide-react"
 
-import { UTM_PARAMS } from "@/config/site"
-import { addQueryParams } from "@/utils/url"
-
 import {
   IntroItem,
   IntroItemContent,
@@ -13,16 +10,10 @@ import {
 type JobItemProps = {
   title: string
   company: string
-  website: string
   experienceId?: string
 }
 
-export function JobItem({
-  title,
-  company,
-  website,
-  experienceId,
-}: JobItemProps) {
+export function JobItem({ title, company, experienceId }: JobItemProps) {
   return (
     <IntroItem>
       <IntroItemIcon>{getJobIcon(title)}</IntroItemIcon>
@@ -37,9 +28,7 @@ export function JobItem({
                 target: "_self",
                 rel: "",
               }
-            : {
-                href: addQueryParams(website, UTM_PARAMS),
-              })}
+            : {})}
         >
           {company}
         </IntroItemLink>

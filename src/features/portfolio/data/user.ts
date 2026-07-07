@@ -23,9 +23,8 @@ export const USER: User = {
   jobs: [
     {
       title: "Web Developer",
-      company: "123Website",
-      website: "https://123website.com.vn/",
-      experienceId: "123-website",
+      company: "Alive Vietnam",
+      experienceId: "alive-vietnam",
     },
   ],
   about: `

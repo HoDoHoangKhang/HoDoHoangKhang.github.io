@@ -1,8 +1,5 @@
 import Image from "next/image"
 
-import { UTM_PARAMS } from "@/config/site"
-import { addQueryParams } from "@/utils/url"
-
 import type { Experience } from "../../types/experiences"
 import { ExperiencePositionItem } from "./experience-position-item"
 
@@ -31,18 +28,7 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
         </div>
 
         <h3 className="text-lg leading-snug font-semibold">
-          {experience.companyWebsite ? (
-            <a
-              className="underline-offset-4 hover:underline"
-              href={addQueryParams(experience.companyWebsite, UTM_PARAMS)}
-              target="_blank"
-              rel="noopener"
-            >
-              {experience.companyName}
-            </a>
-          ) : (
-            experience.companyName
-          )}
+          {experience.companyName}
         </h3>
 
         {experience.isCurrentEmployer && (

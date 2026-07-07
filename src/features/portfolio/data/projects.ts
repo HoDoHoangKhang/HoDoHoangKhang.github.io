@@ -27,10 +27,9 @@ export const PROJECTS: Project[] = [
       "CMP",
       "UI Design",
       "Cursor",
-      "Claude"
+      "Claude",
     ],
-    description:
-      `**B2B e-commerce** for Vietnam — **suppliers** and **buyers** connect via **RFQ** (Request for Quotation) and product catalog.
+    description: `**B2B e-commerce** for Vietnam — **suppliers** and **buyers** connect via **RFQ** (Request for Quotation) and product catalog.
 - **RFQ & quotation** workflow: buyers post requests, suppliers quote; core differentiator vs typical B2B sites.
 - **Supplier recommendation** algorithm to match buyers with relevant suppliers.
 - **Multi-language search** (Vi/En) across catalog and content.
@@ -69,8 +68,7 @@ export const PROJECTS: Project[] = [
       "JavaScript",
       "jQuery",
     ],
-    description:
-      `**RealCart** — internal **real estate** management system for **Akareal**. Custom **WordPress + Vue.js** plugin: teams organize properties, collaborate via **comments**, process data efficiently.
+    description: `**RealCart** — internal **real estate** management system for **Akareal**. Custom **WordPress + Vue.js** plugin: teams organize properties, collaborate via **comments**, process data efficiently.
 - **Vue.js SPA** connected to **WordPress REST API** for fast, interactive property management.
 - **Advanced filtering**, **inline editing**, **customizable data columns** for large property datasets.
 - **Role-based access** with **JWT authentication**; **WP Nonce** for secure requests.
@@ -88,8 +86,7 @@ export const PROJECTS: Project[] = [
     role: "Web Developer",
     link: "https://skeyndorvietnam.vn/",
     skills: ["WordPress", "WooCommerce", "UI/UX", "CSS", "PHP"],
-    description:
-      `**E-commerce website** for **Skeyndor** — Spanish professional skincare brand in Vietnam.
+    description: `**E-commerce website** for **Skeyndor** — Spanish professional skincare brand in Vietnam.
 - **WooCommerce** store: product catalog, cart, checkout, and order management.
 - **Branding & product showcase** for beauty and skincare; category and filter for product discovery.
 - **Responsive UI/UX** and custom styling to align with brand identity.
@@ -114,8 +111,7 @@ export const PROJECTS: Project[] = [
       "Commission Management",
       "User Dashboard",
     ],
-    description:
-      `**Service website** with **user commission management** for NiceSite.
+    description: `**Service website** with **user commission management** for NiceSite.
 - **Tech stack**: **Next.js**, UI libraries **21st** and **React Bits** for modern, interactive components.
 - **Service presentation**: showcase offerings and digital brand; business-focused layout and content.
 - **Commission management**: track and display **user commissions**; dashboard or admin view for referral/affiliate earnings.`,
@@ -130,16 +126,8 @@ export const PROJECTS: Project[] = [
     teamSize: 1,
     role: "UI Design & Development",
     link: "#",
-    skills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Responsive Design",
-      "UI/UX",
-      "MCP",
-    ],
-    description:
-      `**Website** for Dr. Trinh Ha — **UI design** and **development** handled end-to-end.
+    skills: ["HTML", "CSS", "JavaScript", "Responsive Design", "UI/UX", "MCP"],
+    description: `**Website** for Dr. Trinh Ha — **UI design** and **development** handled end-to-end.
 - **First project** using my **MCP server** (Model Context Protocol): streamlined workflow and tooling; **demo delivered in 4 days**.
 - Custom frontend (HTML, CSS, JavaScript), responsive layout for professional presentation.`,
     logo: "/images/logosite/trinhha.png",
@@ -161,8 +149,7 @@ export const PROJECTS: Project[] = [
       "UI/UX",
       "Frontend",
     ],
-    description:
-      `**Deep zoom plugin** for **real estate (BDS) presentation** — high-resolution maps/layouts with layer control.
+    description: `**Deep zoom plugin** for **real estate (BDS) presentation** — high-resolution maps/layouts with layer control.
 - **OpenSeadragon**: deep zoom and pan; smooth navigation across large imagery for client demos.
 - **Layer control**: toggle **all layers** on/off so presenters can show/hide plan layers when presenting BDS projects to clients.
 - Company project — plugin format for reuse in real estate and mapping contexts.`,
@@ -185,8 +172,7 @@ export const PROJECTS: Project[] = [
       "Frontend",
       "Marketing",
     ],
-    description:
-      `**Landing page** for my company — introduces **Zalo Mini App** design & development services.
+    description: `**Landing page** for my company — introduces **Zalo Mini App** design & development services.
 - Built with **Tailwind CSS**; conversion-focused layout to present the product and support lead generation.
 - **Design & development** handled end-to-end: UI/UX and implementation.`,
     logo: "/images/logosite/123website.png",
@@ -201,8 +187,7 @@ export const PROJECTS: Project[] = [
     role: "UI & Development",
     link: "https://asgvn.com.vn/",
     skills: ["WordPress", "UI/UX", "Frontend", "HTML", "CSS"],
-    description:
-      `**Corporate website** for **ASG Investments** — investment company (real estate, finance, technology).
+    description: `**Corporate website** for **ASG Investments** — investment company (real estate, finance, technology).
 - **UI design** and **development** with **WordPress (WP)**: structure, layout, and content for brand and business presence.
 - Presents company vision, investment areas, and contact; responsive and professional.`,
     logo: "/images/logosite/asg.png",
@@ -223,47 +208,10 @@ export const PROJECTS: Project[] = [
       "Responsive Design",
       "Placement Test",
     ],
-    description:
-      `**Website** for **EZ Learning Labs** — French language center: course catalog, intro, and **incoming student placement test**.
+    description: `**Website** for **EZ Learning Labs** — French language center: course catalog, intro, and **incoming student placement test**.
 - Built with **WordPress (WP)**: course pages (A1–B2, intensive, 1:1, TCF/DELF prep, Vietnamese for foreigners), testimonials, library, contact.
 - **Incoming placement test**: free level check and TCF/DELF trial so new students can assess their level before enrolling.`,
     logo: "/images/logosite/ezlearning.png",
-  },
-  {
-    id: "tran-thuy-hang",
-    title: "Trần Thúy Hằng",
-    period: {
-      start: "01.2026",
-    },
-    link: "https://tranthuyhang.com",
-    skills: ["BDS", "WordPress", "UI/UX", "Frontend"],
-    description:
-      "**Real estate (BDS)** intro website — presents properties and brand. WordPress, UI/UX.",
-    logo: "",
-  },
-  {
-    id: "jenny-do",
-    title: "Jenny Đỗ",
-    period: {
-      start: "01.2026",
-    },
-    link: "https://itsjennyworld.com/",
-    skills: ["Personal Brand", "Portfolio Website", "WordPress", "UI/UX", "Frontend"],
-    description:
-      "**Portfolio** — personal website showcasing identity, work, and professional story.",
-    logo: "/images/logosite/jenny.png",
-  },
-  {
-    id: "minh-quan",
-    title: "Minh Quân",
-    period: {
-      start: "01.2026",
-    },
-    link: "https://minhquan-nguyen.com/",
-    skills: ["Personal Brand", "Portfolio Website", "WordPress", "UI/UX", "Frontend"],
-    description:
-      "**Portfolio** — personal website showcasing identity, achievements, and professional presence.",
-    logo: "",
   },
   {
     id: "tim-tho-khoa",
@@ -285,8 +233,7 @@ export const PROJECTS: Project[] = [
       "SEO",
       "Responsive Design",
     ],
-    description:
-      `**Service marketplace** — helps users find locksmiths by **province → district → service** via a **3-level advanced search**.
+    description: `**Service marketplace** — helps users find locksmiths by **province → district → service** via a **3-level advanced search**.
 - **AJAX filtering**: results update instantly without page reload.
 - **Custom Post Types + ACF** for locksmith profiles and custom data management.
 - **Bulk Excel import** with **PHPSpreadsheet** for large datasets.
@@ -336,20 +283,6 @@ export const PROJECTS: Project[] = [
     logo: "/images/logosite/samm.png",
   },
   {
-    id: "buu-nghi",
-    title: "Bửu Nghi",
-    period: {
-      start: "01.2026",
-    },
-    teamSize: 1,
-    role: "Web Developer",
-    link: "https://buunghi.com/",
-    skills: ["Personal Brand", "Portfolio Website", "WordPress", "UI/UX", "Frontend"],
-    description:
-      "**Portfolio** — personal website showcasing identity, work, and professional story.",
-    logo: "",
-  },
-  {
     id: "thep-addc",
     title: "Thép ADDC",
     period: {
@@ -390,20 +323,6 @@ export const PROJECTS: Project[] = [
     description:
       "**B2B website** for **Heli Bình Minh** — forklift (xe nâng) sales: product catalog, company intro, and services.",
     logo: "/images/logosite/helibinhminh.png",
-  },
-  {
-    id: "trieu-vi",
-    title: "Triệu Vi",
-    period: {
-      start: "01.2026",
-    },
-    teamSize: 1,
-    role: "Web Developer",
-    link: "https://annievi.com/",
-    skills: ["Personal Brand", "Portfolio Website", "WordPress", "UI/UX", "Responsive Design"],
-    description:
-      "**Portfolio** — personal website showcasing identity, work, and professional story.",
-    logo: "",
   },
   {
     id: "v-studio",
@@ -448,20 +367,6 @@ export const PROJECTS: Project[] = [
     logo: "/images/logosite/thangmayiwa.png",
   },
   {
-    id: "dang-space",
-    title: "Đăng Space",
-    period: {
-      start: "01.2026",
-    },
-    teamSize: 1,
-    role: "Web Developer",
-    link: "https://dangspace.com/",
-    skills: ["Personal Brand", "Portfolio Website", "WordPress", "UI/UX", "Responsive Design"],
-    description:
-      "**Portfolio** — personal website showcasing identity, work, and professional story.",
-    logo: "/images/logosite/giadang.png",
-  },
-  {
     id: "nhan-de-dan-dau",
     title: "Nhẫn để dẫn đầu",
     period: {
@@ -478,8 +383,7 @@ export const PROJECTS: Project[] = [
       "UI/UX",
       "Frontend",
     ],
-    description:
-      `**YouTube clone** — video platform with short-form content.
+    description: `**YouTube clone** — video platform with short-form content.
 - **Custom plugin**: pull **short videos directly from YouTube** (import/sync) into the site.
 - WordPress-based; video feed and presentation.`,
     logo: "",
@@ -521,7 +425,12 @@ export const PROJECTS: Project[] = [
     teamSize: 1,
     role: "Web Developer",
     link: "https://vinfastnhatduytiengiang.com",
-    skills: ["Automotive Website", "WordPress", "Responsive Design", "Frontend"],
+    skills: [
+      "Automotive Website",
+      "WordPress",
+      "Responsive Design",
+      "Frontend",
+    ],
     description:
       "**VinFast vehicle sales** — Nhật Duy (Tiền Giang) dealership: vehicles, showroom, and contact.",
     logo: "/images/logosite/vinfast.png",
@@ -535,7 +444,13 @@ export const PROJECTS: Project[] = [
     teamSize: 1,
     role: "Web Developer",
     link: "https://idyllicco.com/",
-    skills: ["WordPress", "E-commerce", "UI/UX", "Frontend", "Responsive Design"],
+    skills: [
+      "WordPress",
+      "E-commerce",
+      "UI/UX",
+      "Frontend",
+      "Responsive Design",
+    ],
     description:
       "**E-commerce website** for **Idyllicco** — products made from water hyacinth (lục bình): catalog, brand intro, and sales.",
     logo: "/images/logosite/idyllic.png",
@@ -549,9 +464,16 @@ export const PROJECTS: Project[] = [
     teamSize: 1,
     role: "Frontend Developer",
     link: "https://github.com/HoDoHoangKhang/woodshop_fe",
-    skills: ["React", "Tailwind CSS", "Vite", "Strapi", "PostgreSQL", "E-commerce", "UI/UX"],
-    description:
-      `**E-commerce** — wooden toys store. **React**, **Tailwind CSS**, **Vite**.
+    skills: [
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "Strapi",
+      "PostgreSQL",
+      "E-commerce",
+      "UI/UX",
+    ],
+    description: `**E-commerce** — wooden toys store. **React**, **Tailwind CSS**, **Vite**.
 - Responsive interface; **Strapi CMS** for product data and user interactions.
 - **Advanced search**, cart, checkout, and order history.
 - State and API with **React Context** and custom hooks.`,
@@ -567,9 +489,16 @@ export const PROJECTS: Project[] = [
     teamSize: 1,
     role: "Full-stack Developer",
     link: "https://github.com/HoDoHoangKhang/music_app_fe",
-    skills: ["React", "Tailwind CSS", "Vite", "Django", "MySQL", "REST API", "UI/UX"],
-    description:
-      `**Social music app** — **React**, **Tailwind CSS**, **Vite**; **Django** + **MySQL** backend.
+    skills: [
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "Django",
+      "MySQL",
+      "REST API",
+      "UI/UX",
+    ],
+    description: `**Social music app** — **React**, **Tailwind CSS**, **Vite**; **Django** + **MySQL** backend.
 - **Personal playlists**, favorites, **real-time chat**, dynamic audio player.
 - **Django REST APIs** for user, playlist, music, and chat.
 - Component-based architecture for scalability.`,
@@ -584,9 +513,15 @@ export const PROJECTS: Project[] = [
     teamSize: 1,
     role: "Frontend Developer",
     link: "https://github.com/HoDoHoangKhang/cinema_fe",
-    skills: ["React", "Tailwind CSS", "Vite", "TMDB API", "React Hook Form", "UI/UX"],
-    description:
-      `**Movie discovery** — real-time content from **TMDB API**.
+    skills: [
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "TMDB API",
+      "React Hook Form",
+      "UI/UX",
+    ],
+    description: `**Movie discovery** — real-time content from **TMDB API**.
 - **Keyword search**, genre filtering, detailed movie info.
 - Clean responsive UI with **React Hook Form**; **ESLint**, **Prettier**, **Vite**.`,
     logo: "",
@@ -601,9 +536,16 @@ export const PROJECTS: Project[] = [
     teamSize: 1,
     role: "Full-stack Developer",
     link: "https://github.com/HoDoHoangKhang/shoes_shop",
-    skills: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "E-commerce", "Responsive Design"],
-    description:
-      `**E-commerce** — **HTML**, **CSS**, **JavaScript** frontend; **PHP** + **MySQL** backend.
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "MySQL",
+      "E-commerce",
+      "Responsive Design",
+    ],
+    description: `**E-commerce** — **HTML**, **CSS**, **JavaScript** frontend; **PHP** + **MySQL** backend.
 - Led task allocation and progress tracking.
 - **MySQL** schema for product, order, and user management.
 - **PHP**: product CRUD, reviews, cart, checkout, comments, payment processing.`,
@@ -620,8 +562,7 @@ export const PROJECTS: Project[] = [
     role: "Backend Developer",
     link: "https://github.com/HoDoHoangKhang/hrm",
     skills: ["Java", "SQL Server", "Maven", "Authentication", "Reporting"],
-    description:
-      `**HRM system** — **Java**, **SQL Server**; **Maven** for deployment.
+    description: `**HRM system** — **Java**, **SQL Server**; **Maven** for deployment.
 - **Recruitment management** and **attendance tracking** modules.
 - **Auth**: login, registration, password recovery.
 - **Check-in/out** with daily attendance reports.`,

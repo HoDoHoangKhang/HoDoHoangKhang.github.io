@@ -34,7 +34,6 @@ export function Overview() {
               key={index}
               title={job.title}
               company={job.company}
-              website={job.website}
               experienceId={job.experienceId}
             />
           )
